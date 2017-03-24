@@ -1,1 +1,15 @@
-{{outlet}}
+<form>
+  <div class="form-group">
+    <label for="author">Author</label>
+    {{input class="form-control" value=author id="author"}}
+  </div>
+  <div class="form-group">
+    <label for="body">What's your question</label>
+    {{textarea rows="20" cols="100" class="form-control" value=body id="body"}}
+  </div>
+  <div class="form-group">
+    <label for="notes">Notes</label>
+    {{input class="form-control" value=notes id="notes"}}
+  </div>
+  <button type="button" class="btn btn-success" {{action 'saveQuestion'}}>Ask your question!</button>
+</form>
