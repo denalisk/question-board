@@ -1,16 +1,12 @@
-{{#if isAnswering}}
-  <form>
-    <h3>{{model.author}} desperately wants your answer!!!</h3>
-    <div class="form-group">
-      <label for="author">Author</label>
-      {{input class="form-control" value=author id="author"}}
-    </div>
-    <div class="form-group">
-      <label for="body">Answer...</label>
-      {{textarea rows="20" cols="100" class="form-control" value=body id="body"}}
-    </div>
-    <button type="button" class="btn btn-success" {{action 'saveAnswer'}}>Ask your question!</button>
-  </form>
-{{else}}
-  <button type="button" name="button" class="btn btn-success">Do you have an answer for {{model.author}}?</button>
-  {{/if}}
+<form>
+  <h3>{{model.author}} desperately wants your answer!!!</h3>
+  <div class="form-group">
+    <label for="author">Author</label>
+    {{input class="form-control" value=author id="author"}}
+  </div>
+  <div class="form-group">
+    <label for="body">Answer...</label>
+    {{textarea rows="5" cols="100" class="form-control" value=body id="body"}}
+  </div>
+  <button type="button" class="btn btn-success" {{action 'saveAnswer'}}>Submit your answer</button>
+</form>

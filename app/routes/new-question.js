@@ -15,8 +15,7 @@ export default Ember.Route.extend({
         body: this.controller.get('body'),
         notes: this.controller.get('notes'),
         score: "0",
-        status: true,
-        creation_date: moment().format("MM/DD/YYYY")
+        status: true
       };
       var newQuestion = this.store.createRecord('question', params);
       newQuestion.save();

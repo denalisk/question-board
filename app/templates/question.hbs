@@ -2,17 +2,17 @@
   <span class="lefted"><h3>{{model.author}} asks, </h3></span>
   <span class="med-tabbed"><h2>{{model.body}}</h2></span>
 </div>
-
-{{#if noAnswersYet}}
-<div class="badge">
-  <h3>
-    No one has answered {{model.author}}'s question yet!
-  </h3>
-</div>
+<!-- {{#if isAnswering}}
+  {{answer-question}}
 {{else}}
-  <h3>Answers to {{model.author}}'s question...</h3>
-  {{#each model.answers as |answer|}}
-    {{answer-tile model=answer}}
-    <hr>
-  {{/each}}
-{{/if}}
+  <div class="centered">
+    <button class="btn btn-success" {{action 'addAnswer'}}><h2>Add your answer!</h2></button>
+  </div>
+{{/if}} -->
+{{answer-question question=model saveAnswer='saveAnswer'}}
+
+<h3>Answers to {{model.author}}'s question...</h3>
+{{#each model.answers as |answer|}}
+  {{answer-tile model=answer}}
+  <hr>
+{{/each}}

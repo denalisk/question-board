@@ -7,9 +7,9 @@ export default Ember.Component.extend({
         author: this.get('author'),
         body: this.get('body'),
         score: "0",
-        creation_date: moment().format("MM/DD/YYYY"),
         question: this.get('question')
       };
+      console.log("in answer-question.js saveanswer: " + params.author);
       this.sendAction('saveAnswer', params)
     }
   }
