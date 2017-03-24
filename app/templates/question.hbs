@@ -1,9 +1,19 @@
-<div class="">
-  <h1>hello</h1>
+<div class="well">
+  <span class="lefted"><h3>{{model.author}} asks, </h3></span>
+  <span class="med-tabbed"><h2>{{model.body}}</h4></span>
 </div>
 
+{{#if noAnswersYet}}
+<div class="badge">
+  <h3>
+    No one has answered {{model.author}}'s question yet!
+  </h3>
+</div>
+{{else}}
+  <h3>Answers to {{model.author}}'s question...</h3>
+  {{#each model.answers as |answer|}}
+    {{answer-tile model=answer}}
+    <hr>
+  {{/each}}
 
-{{#each model.answers as |answer|}}
-  {{answer-tile model=answer}}
-  <hr>
-{{/each}}
+{{/if}}
