@@ -17,6 +17,9 @@ export default Ember.Route.extend({
         score: "0",
         status: true
       };
+      this.controller.set('author', "");
+      this.controller.set('body', "");
+      this.controller.set('notes', "");
       var newQuestion = this.store.createRecord('question', params);
       newQuestion.save();
       this.transitionTo('index');

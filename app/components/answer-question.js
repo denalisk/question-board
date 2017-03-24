@@ -1,17 +1,24 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  isAnswering: false,
   actions: {
-    saveAnswer() {
+    saveAnswer(model) {
       var params = {
         author: this.get('author'),
         body: this.get('body'),
         score: "0",
-        question: this.get('question')
+        question: model
       };
       this.set('author', "");
       this.set('body', "");
       this.sendAction('saveAnswer', params)
+    },
+    showAnswerForm() {
+      this.set('isAnswering', true);
+    },
+    hideAnswerForm() {
+      this.set('isAnswering', false);
     }
   }
 });

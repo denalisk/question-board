@@ -1,18 +1,24 @@
-<div class="well">
-  <span class="lefted"><h3>{{model.author}} asks, </h3></span>
-  <span class="med-tabbed"><h2>{{model.body}}</h2></span>
-  <p>
-    {{#link-to 'edit-question' model}}Edit this question{{/link-to}}
-  </p>
-</div>
-<!-- {{#if isAnswering}}
-  {{answer-question question=model saveAnswer='saveAnswer'}}
-{{else}}
-  <div class="centered">
-    <button class="btn btn-success" {{action 'addAnswer'}}><h2>Add your answer!</h2></button>
+<div class="well container-fluid">
+  <div class="col-sm-8">
+    <span class="lefted"><h3>{{model.author}} asks, </h3></span>
+    <span class="med-tabbed"><h2>{{model.body}}</h2></span>
+    <p>
+      {{#link-to 'edit-question' model}}Edit this question{{/link-to}}
+    </p>
   </div>
-{{/if}} -->
-{{answer-question model=model saveAnswer='saveAnswer'}}
+  <div class="col-sm-4">
+    <div class="panel panel-danger">
+      <div class="panel-heading">
+        Notes for this question:
+      </div>
+      <div class="panel-body">
+        {{model.notes}}
+      </div>
+    </div>
+  </div>
+</div>
+
+{{answer-question saveAnswer='saveAnswer' model=model}}
 
 <h3>Answers to {{model.author}}'s question...</h3>
 {{#each model.answers as |answer|}}

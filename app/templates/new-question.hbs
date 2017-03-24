@@ -1,15 +1,18 @@
+<div class="jumbotron">
+  <h1>Ask a question of the internet!</h1>
+</div>
 <form>
   <div class="form-group">
     <label for="author">Author</label>
-    {{input class="form-control" value=author id="author"}}
+    {{input class="form-control" value=author id="author" required="required"}}
   </div>
   <div class="form-group">
     <label for="body">What's your question</label>
-    {{textarea rows="20" cols="100" class="form-control" value=body id="body"}}
+    {{textarea rows="5" cols="100" class="form-control" value=body id="body" required="required"}}
   </div>
   <div class="form-group">
     <label for="notes">Notes</label>
-    {{input class="form-control" value=notes id="notes"}}
+    {{input class="form-control" value=notes id="notes" required="required"}}
   </div>
   <button type="button" class="btn btn-success" {{action 'saveQuestion'}}>Ask your question!</button>
 </form>

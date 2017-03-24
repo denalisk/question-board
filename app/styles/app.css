@@ -20,3 +20,14 @@ div.answer-badge {
   float: right;
   margin-right: 100px;
 }
+
+/*Spaces*/
+div.topper {
+  margin-top: 80px;
+}
+
+/*General Styling*/
+
+body {
+  background-color: salmon;
+}
