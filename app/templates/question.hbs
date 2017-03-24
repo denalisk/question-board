@@ -1,6 +1,6 @@
 <div class="well">
   <span class="lefted"><h3>{{model.author}} asks, </h3></span>
-  <span class="med-tabbed"><h2>{{model.body}}</h4></span>
+  <span class="med-tabbed"><h2>{{model.body}}</h2></span>
 </div>
 
 {{#if noAnswersYet}}
@@ -15,5 +15,4 @@
     {{answer-tile model=answer}}
     <hr>
   {{/each}}
-
 {{/if}}
