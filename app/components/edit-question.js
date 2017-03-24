@@ -8,13 +8,9 @@ export default Ember.Component.extend({
       var params = {
         author: this.get('author'),
         body: this.get('body'),
-        notes: this.get('notes'),
-        score: question.get('score'),
-        status: question.get('status')
+        notes: this.get('notes')
       };
-      var newQuestion = this.store.createRecord('question', params);
-      newQuestion.save();
-      this.transitionTo('question', newQuestion);
+      this.sendAction('updateQuestion', question, params)
     },
     showUpdate() {
       this.set('updatingQuestion', true);
