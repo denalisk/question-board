@@ -1,14 +1,14 @@
 <div class="jumbotron">
-  <h1>Find answers to all of life's most pressing quesitons</h1>
-  <p>
-    with answers by the world's most trusted source, anonymous strangers on the internet!
-  </p>
+  <h1>Find answers to all of life's most pressing questions</h1>
+  <p>with answers from the world's most trusted source, anonymous strangers on the internet!</p>
 </div>
 <div class="centered">
-  <h2>Have you ever wondered...</h2>
+  {{#link-to 'new-question'}}<button class="btn btn-warning"><h2>Ask Your Own Question!</h2></button>{{/link-to}}
+  <br>
+  <h2>Or, see what other people are asking...</h2>
 </div>
 <br>
 {{#each model.questions as |question|}}
-  {{question-tile model=question}}
+  {{#link-to 'question' question}}{{question-tile model=question}}{{/link-to}}
   <hr>
 {{/each}}
