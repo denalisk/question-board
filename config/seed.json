@@ -1,0 +1,54 @@
+{ "questions": [
+  {
+    "body": "Why did the chicken cross the road?",
+    "author": "Dostoyevsky",
+    "notes": "This one is important",
+    "status": "0",
+    "answers": {
+      "0": true,
+      "1": true
+      },
+    "creation_date": "01/01/1000",
+    "score": "0"
+  }, {
+    "body": "Why's yo head so ridicalus",
+    "author": "Da Vinci",
+    "notes": "I'm serious",
+    "status": "0",
+    "answers": {
+      "2": true,
+      },
+    "creation_date": "02/01/1000",
+    "score": "0"
+  }, {
+    "body": "What's your favorite color?",
+    "author": "The Guardian",
+    "notes": "BLUE OR YELLOW MAN",
+    "status": "0",
+    "answers": "Things go here",
+    "creation_date": "01/01/2000",
+    "score": "0"
+  }
+  ],
+  "answers": [
+    {
+      "body": "To get to the other side!!!!",
+      "author": "Dostoyevsky",
+      "score": "0",
+      "create_date": "01/01/2000",
+      "question": 0
+    }, {
+      "body": "Dostoyevsky's a numbnut",
+      "author": "Internet genius",
+      "score": "0",
+      "create_date": "01/01/2000",
+      "question": 0
+    }, {
+      "body": "Because you got 20/20 hindsight, baby",
+      "author": "Ron Paul",
+      "score": "0",
+      "create_date": "01/01/2000",
+      "question": 1
+    }
+  ]
+}

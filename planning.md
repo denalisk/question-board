@@ -42,6 +42,7 @@
         * Author
         * Score
         * Creation Date
+        * Question in a has-one relationship
 
 
 #### 4. UX/UI
