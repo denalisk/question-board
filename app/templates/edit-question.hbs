@@ -1,0 +1,13 @@
+<div class="form-group">
+  <label for="author">Change Author</label>
+  {{input class="form-control" value=author id="author"}}
+</div>
+<div class="form-group">
+  <label for="body">Edit Question</label>
+  {{textarea rows="5" cols="100" class="form-control" value=body id="body"}}
+</div>
+<div class="form-group">
+  <label for="notes">Alter Notes</label>
+  {{input class="form-control" value=notes id="notes"}}
+</div>
+<button type="button" class="btn btn-success" {{action 'updateQuestion'}}>Save Changes</button>

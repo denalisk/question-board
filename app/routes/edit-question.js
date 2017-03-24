@@ -1,14 +1,16 @@
 import Ember from 'ember';
 
-export default Ember.Component.extend({
-  updatingQuestion: false,
+export default Ember.Route.extend({
+  model(params) {
+    return this.store.findRecord('question', params.question_id);
+  },
   actions: {
     updateQuestion() {
       this.set('updatingQuestion', false);
       var params = {
-        author: this.get('author'),
-        body: this.get('body'),
-        notes: this.get('notes'),
+        author: this.controller.get('author'),
+        body: this.controller.get('body'),
+        notes: this.controller.get('notes'),
         score: question.get('score'),
         status: question.get('status')
       };

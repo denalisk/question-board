@@ -17,9 +17,7 @@ export default Ember.Route.extend({
       this.transitionTo('question', question);
     },
     addAnswer() {
-      console.log(this.get('isAnswering'));
       this.set('isAnswering', true);
-      console.log(this.get('isAnswering'));
-    }
+    },
   }
 });

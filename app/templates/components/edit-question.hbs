@@ -1,1 +1,18 @@
-{{yield}}
+{{#if updatingQuestion}}
+  <div class="form-group">
+    <label for="author">Change Author</label>
+    {{input class="form-control" value=author id="author"}}
+  </div>
+  <div class="form-group">
+    <label for="body">Edit Question</label>
+    {{textarea rows="5" cols="100" class="form-control" value=body id="body"}}
+  </div>
+  <div class="form-group">
+    <label for="notes">Alter Notes</label>
+    {{input class="form-control" value=notes id="notes"}}
+  </div>
+  <button type="button" class="btn btn-success" {{action 'updateQuestion'}}>Save Changes</button>
+  <button type="button" class="btn btn-danger" {{action 'hideUpdate'}}>Cancel</button>
+{{else}}
+  <button class="btn btn-success" {{action 'showUpdate'}}><h2>Edit question</h2></button>
+{{/if}}
