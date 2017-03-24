@@ -1,3 +1,9 @@
 <div class="">
   <h1>hello</h1>
 </div>
+
+
+{{#each model.answers as |answer|}}
+  {{answer-tile model=answer}}
+  <hr>
+{{/each}}
