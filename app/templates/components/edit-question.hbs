@@ -1,3 +1,4 @@
+<h1>This is where Goes {{question.author}}</h1>
 <div class="form-group">
   <label for="author">Change Author</label>
   {{input class="form-control" value=author id="author"}}
@@ -10,4 +11,4 @@
   <label for="notes">Alter Notes</label>
   {{input class="form-control" value=notes id="notes"}}
 </div>
-<button type="button" class="btn btn-success" {{action 'updateQuestion'}}>Save Changes</button>
+<button type="button" class="btn btn-success" {{action 'updateQuestion' question}}>Save Changes</button>

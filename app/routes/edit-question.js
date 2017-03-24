@@ -6,6 +6,7 @@ export default Ember.Route.extend({
   },
   actions: {
     updateQuestion(question, params) {
+      console.log("inside level 2 update");
       Object.keys(params).forEach(function(key) {
         if(params[key]!==undefined) {
           question.set(key,params[key]);

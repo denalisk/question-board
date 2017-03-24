@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   updatingQuestion: false,
   actions: {
-    updateQuestion() {
+    updateQuestion(question) {
       this.set('updatingQuestion', false);
       var params = {
         author: this.get('author'),
