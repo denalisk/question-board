@@ -9,7 +9,8 @@ export default Ember.Component.extend({
         score: "0",
         question: this.get('question')
       };
-      console.log("in answer-question.js saveanswer: " + params.author);
+      this.set('author', "");
+      this.set('body', "");
       this.sendAction('saveAnswer', params)
     }
   }

@@ -3,7 +3,7 @@
   <span class="med-tabbed"><h2>{{model.body}}</h2></span>
 </div>
 <!-- {{#if isAnswering}}
-  {{answer-question}}
+  {{answer-question question=model saveAnswer='saveAnswer'}}
 {{else}}
   <div class="centered">
     <button class="btn btn-success" {{action 'addAnswer'}}><h2>Add your answer!</h2></button>

@@ -9,19 +9,17 @@ export default Ember.Route.extend({
     saveAnswer(params) {
       var newAnswer = this.store.createRecord('answer', params);
       var question = params.question;
-      console.log("in question.js save answer: " + params.question);
-      console.log(params);
       question.get('answers').addObject(newAnswer);
       newAnswer.save().then(function() {
         return question.save();
       });
+      this.set('isAnswering', false);
       this.transitionTo('question', question);
     },
-    // addAnswer() {
-    //   console.log("clicky");
-    //   this.set('isAnswering', true);
-    // }
+    addAnswer() {
+      console.log(this.get('isAnswering'));
+      this.set('isAnswering', true);
+      console.log(this.get('isAnswering'));
+    }
   }
 });
-
-// (results => this.set('noAnswersYet', (results.get('answers').get('length') < 0)))
