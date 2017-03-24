@@ -16,7 +16,7 @@
     "notes": "I'm serious",
     "status": "0",
     "answers": {
-      "2": true,
+      "2": true
       },
     "creation_date": "02/01/1000",
     "score": "0"
@@ -36,19 +36,19 @@
       "author": "Dostoyevsky",
       "score": "0",
       "create_date": "01/01/2000",
-      "question": 0
+      "question": "0"
     }, {
       "body": "Dostoyevsky's a numbnut",
       "author": "Internet genius",
       "score": "0",
       "create_date": "01/01/2000",
-      "question": 0
+      "question": "0"
     }, {
       "body": "Because you got 20/20 hindsight, baby",
       "author": "Ron Paul",
       "score": "0",
       "create_date": "01/01/2000",
-      "question": 1
+      "question": "1"
     }
   ]
 }
