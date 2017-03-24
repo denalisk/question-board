@@ -3,7 +3,7 @@
     "body": "Why did the chicken cross the road?",
     "author": "Dostoyevsky",
     "notes": "This one is important",
-    "status": "0",
+    "status": false,
     "answers": {
       "0": true,
       "1": true
@@ -14,7 +14,7 @@
     "body": "Why's yo head so ridicalus",
     "author": "Da Vinci",
     "notes": "I'm serious",
-    "status": "0",
+    "status": false,
     "answers": {
       "2": true
       },
@@ -24,8 +24,8 @@
     "body": "What's your favorite color?",
     "author": "The Guardian",
     "notes": "BLUE OR YELLOW MAN",
-    "status": "0",
-    "answers": "Things go here",
+    "status": true,
+    "answers": {},
     "creation_date": "01/01/2000",
     "score": "0"
   }

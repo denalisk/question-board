@@ -1,0 +1,22 @@
+/* Styles for text-formating */
+span.lefted {
+  font-style: italic;
+}
+
+span.med-tabbed {
+  text-indent: 30px;
+}
+
+div.centered {
+  text-align: center;
+}
+
+div.answer-badge {
+  text-align: center;
+  background-color: yellow;
+  width: 100px;
+  padding: 8px;
+  border-radius: 40%;
+  float: right;
+  margin-right: 100px;
+}

@@ -1,1 +1,13 @@
-{{yield}}
+<div class="container panel panel-info">
+  <div class="panel-heading">
+    {{#if model.status}}
+    <div class="answer-badge">
+      <p>
+        <strong>Needs Answering!!!</strong>
+      </p>
+    </div>
+    {{/if}}
+    <span class="lefted"><h5>{{model.author}} asks, </h5></span>
+    <span class="med-tabbed"><h4>{{model.body}}</h4></span>
+  </div>
+</div>
